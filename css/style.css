@@ -57,6 +57,17 @@ a {
 	display: block;
 }
 
-.testimonial img {
+.testimonial {
 	display: inline;
+}
+
+.page-testimonials span {
+	font-size: 18px;
+	font-weight: 800;
+	color: #85c8ff;
+}
+
+.page-testimonials h2 {
+	font-size: 40px;
+	color: #fff;
 }
