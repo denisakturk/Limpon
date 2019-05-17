@@ -244,19 +244,13 @@ a {
 		align-content: center;
 	}
 
-	.box-subscribe-user {
-
-	}
-
 	.box-subscribe-form {
-		position: relative;
-		width: 70%;
+		width: 60%;
 	}
 
 	.box-subscribe-form .btn-ptimary {
-		position: absolute;
-		top: 0;
-		right: 0;
+		display: block;
+		margin-top: 30px;
 	}
 
 	.box-subscribe-form input {
