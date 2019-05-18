@@ -158,6 +158,7 @@ a {
 	background-image: url("img/sp-background.png");
 	padding: 0;
 	margin: 0;
+	max-width: 100%;	
 }
 	.page-companies ul {
 		display: flex;
@@ -242,34 +243,29 @@ a {
 		justify-content: space-between;
 		align-items: center;
 		align-content: center;
+		width: 100vw;
+		height: 100vh;
 	}
 
-	.box-subscribe-form {
-		width: 60%;
+	.box-subscriber {
+		position: relative;
 	}
 
-	.box-subscribe-form .btn-ptimary {
-		display: block;
-		margin-top: 30px;
-	}
-
-	.box-subscribe-form input {
+	.box-subscribe-user input {
 		border: 2px solid #3f5cb1;
-		border-radius: 45px;
+		border-radius: 30px;
 		background-color: transparent;
-		padding: 25px 37px;
+		padding: 20px 15px;
+		width: 50%;
+		margin-bottom: 40px;
 		display: block;
-		width: 100%;
 		box-sizing: border-box;
-		font-size: 14px;
 	}
- 
 
-	.box-subscribe-form input::-webkit-input-placeholder {color:#b1c3ee;}
-	.box-subscribe-form input::-moz-placeholder          {color:#b1c3ee;}/* Firefox 19+ */
-	.box-subscribe-form input:-moz-placeholder           {color:#b1c3ee;}/* Firefox 18- */
-	.box-subscribe-form input:-ms-input-placeholder      {color:#b1c3ee;}
-
+	.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+	.box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}/* Firefox 19+ */
+	.box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}/* Firefox 18- */
+	.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
 
 .page-software {
 
