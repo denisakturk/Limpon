@@ -33,7 +33,6 @@ h1 {
 	color: #192b59;
 	font-size: 50px;
 	font-weight: 600;
-	max-width: 500px;
 	letter-spacing: -1.3px;
 	line-height: 1.2;
 	text-align: center;
@@ -88,7 +87,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 180px;
+		margin-bottom: 150px;
 	}
 
 	.logo {
@@ -101,22 +100,6 @@ a {
 		margin-left: 0;
 	}
 
-	@media {}
-
-	/*.screen-img {
-		    display: block;
-		    background-image: url(img/header-screen.png);
-		    width: 879px;
-		    height: 707px;
-		    background-repeat: no-repeat;
-		    position: absolute;
-		    right: 0;
-		    top: 140px;
-		    /*left: 875px;*/
-		    /*margin-left: auto;
-
-	}*/
-
 .btn-primary {
 	color: #fff;
 	font-size: 12px;
@@ -127,6 +110,7 @@ a {
 	text-transform: uppercase;
 	padding: 20px 41px;
 	border-radius: 30px;
+	transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -144,10 +128,11 @@ a {
 	text-transform: uppercase;
 	padding: 20px 41px;
 	border-radius: 30px;
+	transition: 0.3s;
 }
 
 .btn-secondary:hover {
-	background-color: #fff;	
+	background-color: #fff;
 }
 
 .btn-start-group a + a {
@@ -177,20 +162,82 @@ a {
 		margin-top: 100px;
 	}
 
-.page-grid {
-
+.page-grid .grid {
+	display: grid;
+	grid-template-areas:  "a b c" 
+						 "d b c" 
+						 "d f g" 
+						 "e f g" 
+						 "e h h";
+	grid-gap: 35px;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1110px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	padding-top: 125px;
 }
-
-	.grid h2 {
+	
+	.grid-title {
 	font-size: 40px;
 	font-weight: 700;
 	color: #192b59;
+	text-align: left;
 	}
 
-	.grid h2 span {
+	.grid-title span {
 		font-size: 14px;
 		display: block;
 		color: #1085e4;
+	}
+
+	.grid-item {
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0 9px 20px #f4f4f4;
+		padding: 40px 59px 64px;
+	}
+
+	.grid-title {
+		grid-area: a;
+	}
+
+	.grid-item-1 {
+		grid-area: b;	
+	}
+
+	.grid-item-2 {
+		grid-area: c;	
+	}
+
+	.grid-item-3 {
+		grid-area: d;	
+	}
+
+	.grid-item-4 {
+		grid-area: e;	
+	}
+
+	.grid-item-5 {
+		grid-area: f;	
+	}
+
+	.grid-item-6 {
+		grid-area: g;	
+	}
+
+	.grid-text {
+		grid-area: h;
+		padding: 0 14px; 
+	}
+
+	.grid-text-author  {
+		color: #1085e4;
+	}
+
+	.grid-text-author span {
+		font-size: 16px;
+		font-weight: 700;
+		color: #192b59;
 	}
 
 	.grid-item h3 {
@@ -203,6 +250,53 @@ a {
 		color: #1085e4;
 		font-size: 14px;
 		font-weight: 600;
+	}
+
+	.grid-item {
+		text-align: center;
+	}
+
+	.grid-icon {
+		background-repeat: no-repeat;
+		display: block;
+		margin: 0 auto 21px;
+		height: 92px;
+		background-position: center;
+	}
+
+	.grid-icon-1 {
+		background-image: url(img/grid-icon-1.png);
+		background-size: 73px 79px;
+	}
+
+	.grid-icon-2 {
+		background-image: url(img/grid-icon-2.png);
+		width: 89px;
+	
+	}
+
+	.grid-icon-3 {
+		background-image: url(img/grid-icon-3.png);
+		width: 89px;
+		height: 85px;
+	}
+
+	.grid-icon-4 {
+		background-image: url(img/grid-icon-4.png);
+		width: 79px;
+		height: 82px;
+	}
+
+	.grid-icon-5 {
+		background-image: url(img/grid-icon-5.png);
+		width: 79px;
+		height: 82px;
+	}
+
+	.grid-icon-6 {
+		background-image: url(img/grid-icon-6.png);
+		width: 79px;
+		height: 82px;
 	}
 
 .page-subscribe {
@@ -267,13 +361,76 @@ a {
 	.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
 
 .page-software {
-
+	padding: 112px 0 149px 0;
+	position: relative;
+	overflow: hidden;
 }
+	.page-software-flex {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.page-software-flex>div {
+		flex-basis: 55%;
+	}
+
+	.page-software-comp {
+		background-image: url(img/page-software-comp1.png);
+		display: block;
+		width: 937px;
+		height: 986px;
+		background-size: 100% 100%;
+		background-position: 0 0;
+		position: absolute;
+		left: -20px;
+		bottom: -39px;
+	}
+
+	.page-software .title-h2 {
+		margin: 0;
+		max-width: 766px;
+		margin-top: 12px;
+		margin-bottom: 26px;
+		text-align: left;
+	}
+
+	.page-software-icon {
+		display: block;
+		background-image: url(img/page-software-icon.png);
+		background-repeat: no-repeat;
+		background-position: -14px 0;
+		width: 115px;
+		height: 97px;
+	}
+
+	.page-software-list {
+		margin-top: 30px;
+		height: 340px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+
+	.page-software-list dt {
+		font-weight: 700;
+		color: #5a6789;
+		margin-bottom: 10px;
+	}
+
+	.page-software-list dd {
+		margin-left: 0;
+		margin-bottom: 50px;
+		font-size: 14px;
+		line-height: 1.8;
+	}
 
 .page-stat {
 	background-color: #edf6ff;
-    padding: 120px 0px 96px 0px;
+    padding: 50px 0px 65px 0px;
 }
+	
+	.page-stat .title-h2 {
+		max-width: 500px;
+	}
 
 	.list-stat {
 	display: flex;
@@ -303,7 +460,26 @@ a {
 
 .page-app {
 
-}
+}		
+	.page-app h2 {
+		font-size: 50px;
+		font-weight: 700;
+		text-align: left;
+		max-width: 450px;
+		margin: 0;
+	}
+
+	.page-app p {
+		color: #7581a1;
+	}
+
+	.page-app .available {
+		color: #c4d2dd;
+		font-size: 16px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
 
 .page-analytics {
 
@@ -321,12 +497,24 @@ a {
 
 }
 
-	.testimonial h4 span {
+	.page-testimonials span {
 		display: block;
 	}
 
+	.testimonials-line {
+		display: flex;
+		justify-content: space-around;
+	}
+
 	.testimonial {
-		display: inline;
+		padding: 20px 80px 40px 40px;
+		height: 225px;
+		border-radius: 10px;
+		box-shadow: 10px 9px 20px #f4f4f4;
+	}
+
+	.testimonial p {
+		font-size: 14px;
 	}
 
 	.page-testimonials span {
@@ -336,8 +524,24 @@ a {
 	}
 
 	.page-testimonials h2 {
+		margin: 0;
+		padding: 0;
 		font-size: 40px;
 		color: #fff;
+		text-align: left;
+	}
+
+	.testimonial-author .testimonial-author-desc {
+		display: inline-block;
+	}
+
+	.testimonial-author-desc h6 {
+		font-size: 22px;
+	}
+
+	.testimonial-author-desc h6 span {
+		display: block;
+		font-size: 14px;
 	}
 
 .page-plan {
@@ -433,6 +637,7 @@ a {
 			text-transform: uppercase;
 			padding: 20px 41px;
 			border-radius: 30px;
+			transition: 0.3s;
 }
 
 	.box-active {
@@ -454,4 +659,32 @@ a {
 
 .page-footer {
 
+}
+
+@media screen and (max-width: 1200px) {
+.wrap {
+width: 970px;
+}
+}
+
+@media screen and (max-width: 991px) {
+.wrap {
+width: 750px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.wrap {
+width: 450px;
+}
+.nav {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 479px) {
+.wrap {
+width: 310px;
+}
 }
