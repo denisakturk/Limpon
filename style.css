@@ -20,13 +20,14 @@ body {
 
 h1 {
 	font-size: 80px;
-	font-weight: 600;
-	color: #192b59;
-	line-height: 1.1;
-	letter-spacing: -2.5px;
-	max-width: 540px;
-	margin-bottom: 65px;
-	margin-left: 0;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.1;
+    letter-spacing: -2.5px;
+    max-width: 540px;
+    margin-bottom: 67px;
+    margin-top: 305px;
+    margin-left: 0;
 }
 
 .title-h2 {
@@ -81,6 +82,10 @@ a {
 	.nav-item {
 		color: #6e7ea9;
 		letter-spacing: 2px;
+	}
+	
+	.nav-item:hover {
+		text-decoration: underline;
 	}
 
 	.box-header {
@@ -159,7 +164,7 @@ a {
 	}
 
 	.page-companies ul>li:nth-child(2n) {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 
 .page-grid .grid {
@@ -361,13 +366,14 @@ a {
 	.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
 
 .page-software {
-	padding: 112px 0 149px 0;
+	padding: 107px 0 143px 10px;
 	position: relative;
 	overflow: hidden;
 }
 	.page-software-flex {
 		display: flex;
 		justify-content: flex-end;
+		margin-left: 330px;
 	}
 
 	.page-software-flex>div {
@@ -377,13 +383,14 @@ a {
 	.page-software-comp {
 		background-image: url(img/page-software-comp1.png);
 		display: block;
-		width: 937px;
-		height: 986px;
-		background-size: 100% 100%;
-		background-position: 0 0;
-		position: absolute;
-		left: -20px;
-		bottom: -39px;
+		width: 1466px;
+		height: 1428px;
+		background-size: 100%;
+    	background-position: 0 0;
+    	position: absolute;
+    	left: -700px;
+    	top: 37px;
+    	background-repeat: no-repeat;
 	}
 
 	.page-software .title-h2 {
@@ -423,9 +430,14 @@ a {
 		line-height: 1.8;
 	}
 
+	.page-software-list::-webkit-scrollbar { width: 4px; height: 4px;}
+	.page-software-list::-webkit-scrollbar-button {  background-color: #1085e4; }
+	.page-software-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+	.page-software-list::-webkit-scrollbar-thumb { height: 50px; background-color: #1085e4; border-radius: 10px;}
+
 .page-stat {
 	background-color: #edf6ff;
-    padding: 50px 0px 65px 0px;
+    padding: 110px 0px 65px 0px;
 }
 	
 	.page-stat .title-h2 {
@@ -459,27 +471,71 @@ a {
 }
 
 .page-app {
+	padding: 100px 0 100px 0;
+	position: relative;
 
 }		
+
+
+	.page-app-content {
+		width: 55%;
+		position: relative;
+	}	
+
 	.page-app h2 {
 		font-size: 50px;
 		font-weight: 700;
 		text-align: left;
 		max-width: 450px;
 		margin: 0;
+		margin-bottom: 39px;
 	}
 
 	.page-app p {
 		color: #7581a1;
 	}
 
-	.page-app .available {
+	.page-app-available {
 		color: #c4d2dd;
 		font-size: 16px;
-		font-weight: 800;
+		font-weight: 700;
 		text-transform: uppercase;
+		letter-spacing: 3.5px;
+		margin-top: 30px;
+		margin-bottom: 21px;
 	}
 
+	.page-app-list {
+		padding: 0;
+		list-style-type: none; 
+	}
+
+	.page-app-list>li {
+		display: inline-block;
+	}
+
+	.page-app-list>li>a{
+		background-image: url(img/page-list-app.png);
+		display: block;
+		background-repeat: no-repeat; 
+		width: 162px;
+		height: 60px;
+	} 
+	.page-app-list>li>a.page-app-andro {
+		background-position: 0 0;
+	}
+
+	.page-app-list>li>a.page-app-ios {
+		background-position: -166px 0;
+		width: 200px;
+	}
+
+	.page-app-video {
+		position: absolute;
+		top: 47px;
+    	right: 60px;
+
+	}
 
 .page-analytics {
 
