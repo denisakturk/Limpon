@@ -545,30 +545,38 @@ a {
 	padding: 100px 0 150px 0;
 }
 
-	.page-analytics .title-h2 {
+	.page-analytics .title-h2, .flex-page-control .title-h2 {
 		text-align: left;
 		margin-bottom: 20px;
 	}
 
-	.flex-analytics {
+	.flex-analytics, .flex-page-control {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	.flex-analytics>div {
+	.flex-analytics>div, .flex-page-control>div {
 		flex-basis: 50%;
 	}
 
-	.analytics-text {
+	.analytics-text, .flex-page-control p  {
 		margin-bottom: 40px;
 		font-size: 16px;
 		font-weight: 100;
 	}
 
 .page-control {
-
+	background-image: url(img/control-background.png);
+	background-repeat: no-repeat;
+	background-position: -100px -40px;
+	background-size: cover;
+	padding: 120px 0 136px 160px;
 }
+
+	.flex-page-control>div {
+		flex-basis: 50%;
+	}
 
 .page-screen {
 	background-image: url()
