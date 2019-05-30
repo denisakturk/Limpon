@@ -538,8 +538,33 @@ a {
 	}
 
 .page-analytics {
-
+	background-image: url(img/analytics-background2.png);
+	background-repeat: no-repeat;
+	background-position: -100px 0;
+	background-size: cover;
+	padding: 100px 0 150px 0;
 }
+
+	.page-analytics .title-h2 {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	.flex-analytics {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.flex-analytics>div {
+		flex-basis: 50%;
+	}
+
+	.analytics-text {
+		margin-bottom: 40px;
+		font-size: 16px;
+		font-weight: 100;
+	}
 
 .page-control {
 
