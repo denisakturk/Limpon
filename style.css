@@ -581,8 +581,29 @@ a {
 	}
 
 .page-screen {
-	/*background-image: url();*/
+	background-color: #edf6ff;
+	padding-top: 114px;
+	margin-bottom: 125px;
 }
+	
+	.page-screen-title {
+		font-weight: 600;
+		letter-spacing: -1px;
+		max-width: 500px;
+		font-size: 40px;
+		margin-bottom: 70px;
+	}
+
+	.page-screen-title span {
+		font-size: 18px;
+	}
+
+	.details-screenshot {
+		background-image: url(img/details-screenshot.png);
+		width: 1288px;
+		height: 490px;
+		margin: 0 auto;
+	}
 
 .page-testimonials {
 	background-image: url(img/page-testimonials-background.svg);
