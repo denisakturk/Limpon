@@ -26,7 +26,7 @@ h1 {
     letter-spacing: -2.5px;
     max-width: 540px;
     margin-bottom: 67px;
-    margin-top: 305px;
+    margin-top: 240px;
     margin-left: 0;
 }
 
@@ -64,6 +64,7 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	background-position: center;
 	padding: 53px 0 330px 0;
 }
 	.nav {
@@ -148,6 +149,7 @@ a {
 	height: 273px;
 	background-image: url("img/sp-background.png");
 	padding: 1px;
+	background-position: center;
 	margin: 0;
 	max-width: 100%;	
 }
@@ -540,7 +542,7 @@ a {
 .page-analytics {
 	background-image: url(img/analytics-background2.png);
 	background-repeat: no-repeat;
-	background-position: -100px 0;
+	background-position: center;
 	background-size: cover;
 	padding: 100px 0 150px 0;
 }
@@ -569,7 +571,7 @@ a {
 .page-control {
 	background-image: url(img/control-background.png);
 	background-repeat: no-repeat;
-	background-position: -100px -40px;
+	background-position: center;
 	background-size: cover;
 	padding: 120px 0 136px 160px;
 }
@@ -579,58 +581,75 @@ a {
 	}
 
 .page-screen {
-	background-image: url()
+	/*background-image: url();*/
 }
 
 .page-testimonials {
-
+	background-image: url(img/page-testimonials-background.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding: 15px 0 0 0;
+	background-size: 100%;
 }
 
-	.page-testimonials span {
-		display: block;
-	}
-
-	.testimonials-line {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.testimonial {
-		padding: 20px 80px 40px 40px;
-		height: 225px;
-		border-radius: 10px;
-		box-shadow: 10px 9px 20px #f4f4f4;
-	}
-
-	.testimonial p {
-		font-size: 14px;
-	}
-
-	.page-testimonials span {
-		font-size: 18px;
-		font-weight: 800;
-		color: #85c8ff;
-	}
-
-	.page-testimonials h2 {
-		margin: 0;
-		padding: 0;
-		font-size: 40px;
+	.testimonials-title {
 		color: #fff;
 		text-align: left;
 	}
 
-	.testimonial-author .testimonial-author-desc {
-		display: inline-block;
-	}
-
-	.testimonial-author-desc h6 {
-		font-size: 22px;
-	}
-
-	.testimonial-author-desc h6 span {
+	.page-testimonials span {
 		display: block;
+		color: #85c8ff;
+	}
+
+	.testimonials-line {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 32px;
+	}
+
+	.testimonial {
+		background-color: #fff;
+		padding: 20px 30px;
+		border-radius: 10px;
+		flex-basis: 31.5%;
+		box-sizing: border-box;
 		font-size: 14px;
+		box-shadow: 0 9px 20px #f4f4f4;
+	}
+
+	.testimonial>p {
+		margin-bottom: 17px;
+	}
+
+	.testimonial-info {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.testimonial-info .name-position {
+		padding-left: 17px;
+	}
+
+	.name-position {
+		padding-left: 20px;
+	}
+
+	.testimonial-name {
+		font-size: 22px;
+		font-weight: 600;
+		color: #000958;
+		margin-bottom: 0;
+		letter-spacing: -0.6px;
+	}
+
+	.testimonial-position {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #1085e4;
+		margin-top: 0;
 	}
 
 .page-plan {
