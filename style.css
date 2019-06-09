@@ -16,6 +16,7 @@ body {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 26px;
+	padding-bottom: 0;
 }
 
 h1 {
@@ -1031,8 +1032,57 @@ a {
 
 .page-footer {
 	background-color: #192b59;
-	margin: -16px 0 -16px 0;
+	/*margin: -16px 0 -16px 0;*/
+	padding-bottom: 0;
 }
+	.footer-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-flex>p a {
+		text-transform: uppercase;
+	}
+
+	.social {
+		list-style-type: none;
+		display: flex;
+	}
+
+	.ftr-list {
+		display: block;
+		background-repeat: no-repeat;
+		height: 16px;
+		align-self: center;
+		margin-top: 10px;
+		padding-top: 10px;
+		margin-right: 20px;
+	}
+
+	.ftr-fb {
+		background-image: url(img/ftr-icons-fb.png);
+		width: 16px;
+	}
+
+	.ftr-tw {
+		background-image: url(img/ftr-icons-tw.png);
+		width: 16px;
+	}
+
+	.ftr-be {
+		background-image: url(img/ftr-icons-be.png);
+		width: 20px;
+	}
+
+	.ftr-pi {
+		background-image: url(img/ftr-icons-pi.png);
+		width: 16px;
+	}
+
+	.ftr-fo {
+		background-image: url(img/ftr-icons.png);
+		width: 16px;
+	}
 
 @media screen and (max-width: 1200px) {
 .wrap {
