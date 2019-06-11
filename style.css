@@ -170,27 +170,32 @@ a {
 		flex-wrap: wrap;
 	}
 
-	.list-companies-item {
+	.company-one {flex-basis: 198px;}
+	.company-two {flex-basis: 200px;}
+	.company-three {flex-basis: 201px;}
+	.company-four {flex-basis: 200px;}
+
+	.list-companies-item span {
 		display: block;
 	}
 
-	.company-one {
-		flex-basis: 198px;
+	.company-one span {
+		width: 198px;
 		height: 58px;
 	}
 	
-	.company-two {
-		flex-basis: 200px;
+	.company-two span {
+		width: 200px;
 		height: 69px;
 	}
 
-	.company-three {
-		flex-basis: 200px;
+	.company-three span {
+		width: 201px;
 		height: 47px;
 	}
 
-	.company-four {
-		flex-basis: 200px;
+	.company-four span {
+		width:  200px;
 		height: 69px;
 	}
 
@@ -208,6 +213,8 @@ a {
 	margin: 0 auto;
 	padding-bottom: 100px;
 	padding-top: 125px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 	
 	.grid-title {
@@ -362,30 +369,42 @@ a {
 		color: #fff;
 		font-size: 18px;
 		font-weight: 600;
-		padding-right: 300px;
 		margin-bottom: 60px;
+		max-width: 437px;
 	}
 
 	.box-subscribe {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		align-content: center;
+		flex-wrap: wrap; 
 	}
 
-	.box-subscriber {
+	.box-subscribe-child {
+		flex-basis: 49%;
+	}
+
+	.box-subscribe-user {
 		position: relative;
 	}
 
 	.box-subscribe-user input {
 		border: 2px solid #3f5cb1;
-		border-radius: 30px;
+		color: #fff;
+		font-size: 14px;
+		border-radius: 45px;
 		background-color: transparent;
-		padding: 20px 15px;
-		width: 50%;
-		margin-bottom: 40px;
+		padding: 25px 230px 25px 37px;
 		display: block;
+		width: 100%;
 		box-sizing: border-box;
+	}
+
+	.box-subscribe-user .btn-primary {
+		position: absolute;
+		top: 5px;
+		right: 8px;
+		padding: 17px 50px;
 	}
 
 	.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
@@ -1109,5 +1128,46 @@ a {
 
 
 @media (max-width: 900px) {
-	.list-companies-item {}
+	.list-companies-item {
+		flex-basis: 50%;
+		margin-bottom: 50px;
+	}
+	.list-companies-item span {
+		margin: 0 auto;
+	}
+
+	.page-companies {
+		padding: 50px 0 30px;
+	}
+
+	.page-grid .grid {
+	display: grid;
+	grid-template-areas: "a a " 
+						 "b c" 
+						 "d e" 
+						 "f g"
+						 "h h";
+	grid-template-columns: 1fr 1fr;
+	
+	}
+	.grid-title {
+		text-align: center;
+	}
+
+	.box-subscribe-child {
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.box-subscribe img, .page-subscribe p {
+		margin: 0 auto;
+	}
+
+	.page-subscribe p {
+		margin-bottom: 30px;
+	}
+
+	.page-subscribe h2 {
+		text-align: center;
+	}
 }
