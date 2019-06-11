@@ -79,11 +79,13 @@ a {
 	padding: 0;
 	display: flex;
 }
-	.nav>li {
-		padding: 0 20px;
+
+	.nav-button {
+		display: none;
 	}
 
 	.nav-item {
+		padding: 0 20px;
 		color: #6e7ea9;
 		letter-spacing: 2px;
 	}
@@ -1127,7 +1129,15 @@ a {
 	}
 
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
+	.nav {
+		display: none;
+	}
+	
+	.nav-button {
+		display: block;
+	}
+
 	.list-companies-item {
 		flex-basis: 50%;
 		margin-bottom: 50px;
