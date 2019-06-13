@@ -51,36 +51,13 @@ a {
 }
 
 .page-header {
-	background-image: url("img/background.png");
+	background-image: url("img/header-background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
 	background-position: center;
 	padding: 20px 0 330px 0;
+	position: relative;
 }
-	/*.nav {
-	font-size: 12px;
-	text-transform: uppercase;
-	font-weight: 700;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-	.nav-button {
-		display: none;
-	}
-
-	.nav-item {
-		padding: 0 20px;
-		color: #6e7ea9;
-		letter-spacing: 2px;
-	}
-	
-	.nav-item:hover {
-		text-decoration: underline;
-	}*/
 
 	nav {
 		margin: 0;
@@ -153,6 +130,16 @@ a {
 	padding: 20px 41px;
 	border-radius: 30px;
 	transition: 0.3s;
+}
+
+.screen-img {
+	background-image: url(img/header-screen-min.png);
+	width: 703px;
+	height: 565px;
+	position: absolute;
+	right: 0;
+	top: 150px;
+
 }
 
 .btn-secondary:hover {
@@ -1152,6 +1139,9 @@ a {
 		display: none;
 	}
 
+	.btn-primary.btn-free {
+		display: none;
+	}
 
 	.list-companies-item {
 		flex-basis: 50%;
