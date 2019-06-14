@@ -135,6 +135,7 @@ a {
 
 .screen-img {
 	background-image: url(img/header-screen-min.png);
+	background-repeat: no-repeat;
 	width: 703px;
 	height: 565px;
 	position: absolute;
@@ -1131,13 +1132,49 @@ a {
 	}
 
 
+@media (max-width: 1350px) {
+	h1 {
+		font-size: 50px;
+	}
+	.screen-img {
+		width: 636px;
+		height: 508px;
+		position: absolute;
+		right: 0;
+	}
+
+	/*.btn-group {
+		text-align: center;
+	}
+	
+	.page-header {
+		padding-bottom: 100px;
+	}*/
+
+	.page-software {
+		padding: 60px 15px;
+	}
+
+	.page-software-flex {
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+	.page-software-flex>div {
+    flex-basis: 100%;
+}
+
+	/*h1 {
+		margin: 0 auto;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		text-align: center;
+	}*/
+}
+
 @media (max-width: 1020px) {
 	nav .btn-primary.btn-free {
 		margin-top: 22px;
-	}
-
-	.screen-img {
-		display: none;
 	}
 
 	.btn-primary.btn-free {
