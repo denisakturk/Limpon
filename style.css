@@ -1231,10 +1231,6 @@ nav {
 		flex-basis: 100%;
 		text-align: center;
 	}
-	.box-subscribe img  {
-			display: none;
-		}
-	}
 
 	.box-subscribe img, .page-subscribe p {
 		margin: 0 auto;
@@ -1319,7 +1315,6 @@ nav {
 @media (max-width:480px) {
 	p, dd, dt {
 		text-align: left;
-		/*padding: 0 20px;*/
 	}
 
 	.title-h2 {
